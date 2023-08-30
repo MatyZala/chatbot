@@ -10,7 +10,6 @@ function App() {
   };
 
   const handleDocumentClick = (e) => {
-    // Cerrar el chat si se hace clic fuera del botón o del chat
     if (!e.target.closest('.floating-button') && !e.target.closest('.chat-container')) {
       setIsChatOpen(false);
     }
